@@ -1,0 +1,577 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(4, 4, 14);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    background-color: rgb(4, 4, 14, 92%);
+    padding-top: 10px;
+    justify-content: space-between;
+    width: 100%;
+    height: 4Opx;
+    color: white;
+    position: sticky;
+    top: 0;
+    float: none;
+}
+
+.logo {
+    display: flex;
+    margin-left: 20px;
+    line-height: 10px;
+
+}
+
+.logo img {
+    margin-right: 5px;
+    margin-bottom: 15px;
+    border-radius: 40px;
+
+}
+
+.menu ul {
+    margin: 0;
+    padding:0;
+    list-style: none;
+}
+
+.menu ul li {
+    /* list-style: none;
+    padding-left: 40px; */
+    float: left;
+    width: 200px;
+    height: 32px;
+    line-height: 30px;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+
+}
+.menu ul li:hover {
+    /* list-style: none;
+    padding-left: 40px; */
+    width: 200px;
+    height: 32px;
+    line-height: 30px;
+    text-align: center;
+    display: block;
+
+}
+.menu ul li .tutos{
+    display: none ;
+    background-color:black;
+}
+.menu ul li .tutos :hover{
+    display: block;
+    background-color: #fff;
+    color:#3dbaf4;
+    border-radius: 20px;
+}
+.menu ul li:hover .tutos{
+    display: block;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.menu ul li a:hover {
+
+    text-decoration: none;
+    color: #3dbaf4;
+
+}
+
+
+.sign {
+    display: flex;
+    line-height: 30px;
+    margin-right: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.bi {
+    margin-left: 10px;
+}
+
+.rech {
+    background-color: white;
+    color: black;
+    padding: 1px;
+    border-radius: 10px;
+}
+
+.rech input {
+    border: none;
+
+}
+
+.sign button {
+    color: white;
+    background-color: #3dbaf4;
+    border-radius: 20px;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 10px;
+}
+
+.location {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.location span {
+    font-size: 5em;
+    color: white;
+    font-weight: 900;
+    margin-top: 100Px;
+}
+
+.location p strong {
+    color: #de258a;
+}
+
+.location p {
+    font-size: 1.8em;
+    color: rgb(105, 109, 119);
+    margin-top: 20Px;
+}
+
+.location button {
+    font-size: 1.3em;
+    color: white;
+    background-color: #3dbaf4;
+    border-radius: 40px;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.agree {
+    z-index: 2;
+    font-size: 1.1em;
+    position: fixed;
+    display: flex;
+    text-align: center;
+    color: white;
+    background-color: rgba(21, 21, 37, 0.9);
+    border-radius: 40px;
+    margin-top: 60px;
+    margin-left: 450px;
+    margin-right: 450px;
+}
+
+.agree p {
+    margin-left: 20px;
+}
+
+.agree p a {
+    text-decoration: none;
+    color: dodgerblue;
+
+}
+
+.agree button {
+    color: white;
+    background-color: #3dbaf4;
+    border-radius: 40px;
+    border: none;
+    margin-left: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+.flech {
+    display: flex;
+    margin-right: 625Px;
+    margin-left: 625Px;
+    margin-top: 280Px;
+}
+
+h5 {
+    color: white;
+    font-size: 1.8em;
+    text-align: center;
+    margin-top: 120px;
+}
+
+.tuto {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+    margin-right: 170px;
+    margin-left: 170px;
+    margin-bottom: 50Px;
+}
+
+.tuto img:hover {
+    text-align: center;
+    transform: scale(1.2);
+}
+
+.slider {
+    z-index: 1;
+    height: 70vh;
+    position: relative;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.slider img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    position: absolute;
+    margin-top: 50px;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.slider img.active {
+    opacity: 1;
+}
+
+.fleche {
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-around;
+    margin-left: 550Px;
+    margin-right: 550Px;
+}
+
+.suivant,
+.precedent {
+    color: white;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.suivant {
+    right: 1rem;
+}
+
+.precedent {
+    left: 1rem;
+}
+
+.aftertuto a {
+    text-align: center;
+    text-decoration: none;
+    color: #3dbaf4;
+}
+
+.aftertuto {
+    text-align: center;
+}
+
+.let-com {
+    margin-top: 50px;
+}
+
+.let-com p {
+    text-align: center;
+    color: rgb(155, 155, 155);
+    font-size: 1.5em;
+}
+
+#community {
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    margin-left: 80px;
+}
+
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    background: none;
+    margin-right: 100px;
+}
+
+.modal ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.modal ul li {
+    position: relative;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    /* background: #de258a; */
+    margin: 0 20px;
+    padding: 35px;
+    border-radius: 50px;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.modal ul li:hover {
+    background: none;
+    /* #86ff3b;
+    box-shadow: 0 0 0 4px #333,
+    0 0 0 6px #86ff3b ; */
+}
+
+.modal ul li .content {
+    position: absolute;
+    bottom: 55px;
+    width: 400px;
+    background: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    visibility: hidden;
+    opacity: O;
+    transition: 0.5s;
+    transform: translateX(-50%) translateY(-50px);
+}
+
+.modal ul li .content:before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    bottom: -10px;
+    left: 240px;
+    transform: rotate(45deg);
+}
+
+.modal ul li:hover .content {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%) translateY(0px);
+}
+
+.modal ul li img {
+    position: absolute;
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
+
+.modal ul li img:hover {
+    position: absolute;
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border-radius: 100px;
+    box-shadow: 0 0 0 4px #333,
+        0 0 0 6px #FFFF;
+}
+
+.rejoignez {
+    text-align: center;
+    margin-top: 90px;
+}
+
+.rejoignez button {
+    background: #3dbaf4;
+    color: white;
+    border: none;
+    font-size: 1.1em;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15Px;
+    padding-bottom: 10px;
+
+}
+
+.rejoignez button:hover {
+    background: white;
+    color: #3dbaf4;
+    border: none;
+    font-size: 1.1em;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15Px;
+    padding-bottom: 10px;
+
+}
+
+.academy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+    margin-left: 80px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-right: 90px;
+    padding-left: 90px;
+    margin-right: 80px;
+    color: white;
+    background-color: rgba(21, 21, 37, 0.8);
+    border-radius: 50px;
+    width: 1000Px;
+    height: 450px;
+}
+
+.acalogo {
+    text-align: center;
+}
+
+.acalogo img {
+    width: 200px;
+    margin-top: 0;
+}
+
+.acalogo h1 {
+    font-size: 2em;
+}
+
+.texte {
+    color: rgb(155, 155, 155);
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.texte button {
+    background: #de258a;
+    color: white;
+    border: none;
+    font-size: 1.1em;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15Px;
+    padding-bottom: 10px;
+}
+
+.texte button:hover {
+    background: white;
+    color: #de258a;
+    box-shadow: 3px 3px 6px #de258a;
+    ;
+    font-size: 1.1em;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15Px;
+    padding-bottom: 10px;
+}
+
+.fin {
+    display: flex;
+    margin-left: 10px;
+    margin-top: 100px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+}
+
+.fin .logo {
+    color: white;
+    display: flex;
+    margin-right: 300px;
+}
+
+.fin .logo img {
+    margin-right: 5px;
+    margin-bottom: 15px;
+    border-radius: 40px;
+
+}
+
+.fin .catégories1 a {
+    display: flex;
+    color: rgb(155, 155, 155);
+    text-decoration: none;
+    margin-bottom: 25px;
+    margin-right: 200px;
+}
+
+.fin .catégories2 a {
+    display: flex;
+    color: rgb(155, 155, 155);
+    text-decoration: none;
+    margin-bottom: 25px;
+    margin-right: 200px;
+}
+
+.fin .catégories3 a {
+    display: flex;
+    color: rgb(155, 155, 155);
+    text-decoration: none;
+    margin-bottom: 25px;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 80px;
+}
+
+.terme span {
+    color: rgb(155, 155, 155);
+    margin-right: 15px;
+}
+
+.contact .logo i {
+    color: rgb(155, 155, 155);
+    margin-right: 20px;
+    font-size: 1.3em;
+}
+
+.nouveau {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+    margin-left: 80px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 90px;
+    padding-left: 90px;
+    margin-right: 80px;
+    color: white;
+    background-color: rgba(21, 21, 37, 0.8);
+    border-radius: 50px;
+    width: 1000Px;
+    height: 450px;
+}
+
+.nouveau .texte {
+    margin-right: 50px;
+}
+
+.texte h1 {
+    color: white;
+}
+
+.phone img {
+    object-fit: cover;
+    width: 520px;
+}
