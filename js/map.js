@@ -1,4 +1,3 @@
-
 var img= document.getElementsByClassName('img_slider');
 var etape=0;
 var nbr =img.length;
@@ -33,3 +32,11 @@ setInterval(function(){
     inactive();
     img[etape].classList.add('active');
 },3000)
+var btn = document.querySelector('.btn-menu');
+var menu = document.querySelector('.menu');
+var sign = document.querySelector('.sign')
+btn.addEventListener('click', ()=>{
+    menu.classList.toggle('mobile')
+    sign.classList.toggle('connecter');
+
+})
