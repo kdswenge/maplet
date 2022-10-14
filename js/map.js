@@ -35,8 +35,9 @@ setInterval(function(){
 var btn = document.querySelector('.btn-menu');
 var menu = document.querySelector('.menu');
 var sign = document.querySelector('.sign')
+var body = document.querySelector('body');
 btn.addEventListener('click', ()=>{
     menu.classList.toggle('mobile')
-    sign.classList.toggle('connecter');
-
+    sign.classList.toggle('connecter')
+    body.classList.toggle('fixer');
 })
